@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Calculator app</title>
+  </head>
+  <body>
+    <main>
+      <div class="cal-hero-container">
+        <h1 class="logo">calc</h1>
+
+        <div class="theme-toggle-container">
+          <p class="theme">Theme</p>
+
+          <div class="theme-container">
+            <div class="theme-toggle-text-container">
+              <p class="theme-toggle-text" id="theme-no-1">1</p>
+              <p class="theme-toggle-text" id="theme-no-2">2</p>
+              <p class="theme-toggle-text" id="theme-no-3">3</p>
+            </div>
+
+            <div class="theme-toggle-body">
+              <button id="toTheme1" class="theme__btn"></button>
+              <button id="toTheme2" class="theme__btn"></button>
+              <button id="toTheme3" class="theme__btn"></button>
+              <i class="indicator"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <section class="section">
+        <div class="result__section">
+          <span class="result" value=""></span>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="button__section">
+          <button value="7" class="btn nums" id="seven">7</button>
+          <button value="8" class="btn nums" id="eight">8</button>
+          <button value="9" class="btn nums" id="nine">9</button>
+          <button value="" class="btn" id="delete">DEL</button>
+          <button value="4" class="btn nums" id="four">4</button>
+          <button value="5" class="btn nums" id="five">5</button>
+          <button value="6" class="btn nums" id="six">6</button>
+          <button value="+" class="btn signs" id="plus">+</button>
+          <button value="1" class="btn nums" id="one">1</button>
+          <button value="2" class="btn nums" id="two ">2</button>
+          <button value="3" class="btn nums" id="three">3</button>
+          <button value="-" class="btn signs" id="minus">-</button>
+          <button value="." class="btn signs" id="dot">.</button>
+          <button value="0" class="btn nums" id="zero">0</button>
+          <button value="/" class="btn signs" id="divide">/</button>
+          <button value="*" class="btn signs" id="times">x</button>
+          <button value="" class="btn resetbtn" id="reset">RESET</button>
+          <button value="=" class="btn" id="equals">=</button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Oliveszn</a>.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
